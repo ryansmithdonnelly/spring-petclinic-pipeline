@@ -10,7 +10,7 @@ pipeline {
         stage('Package') {
             steps {
                 git branch: 'main', url: 'https://github.com/spring-projects/spring-petclinic.git'
-                sh './mvnw clean package -DskipTests'
+                sh './mvnw clean package'
                 stash includes: 'target/spring-petclinic-*.jar', name: 'petclinic-jar'
             }
         }

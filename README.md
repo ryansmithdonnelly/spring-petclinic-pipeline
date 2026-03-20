@@ -19,7 +19,7 @@ DOCKER_REG_URL: hostname or IP and port for Docker repository
 
 DOCKER_REG_PATH: path to Docker repository
 
-TAG: image tag.
+TAG: image tag
 
 Under "Pipeline," for "Definition," select "Pipeline script from SCM."  Choose "Git" for "SCM," and enter the URL of this repository for "Repository URL" ("https://github.com/ryansmithdonnelly/spring-petclinic-pipeline.git").  "Branch Specifier" should also be updated to "*/main" if necessary.  Click "Save," then "Build with Parameters," override defaults as necessary, and click "Build."  Upon completion, an image will be available at $DOCKER_REG_URL/$DOCKER_REG_PATH/spring-petclinic:$TAG.
 
